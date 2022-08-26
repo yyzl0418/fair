@@ -20,56 +20,90 @@
             "className": "Expanded",
             "na": {
               "child": {
-                "className": "Container",
+                "className": "Column",
                 "na": {
-                  "color": "#(Colors.amber)",
-                  "child": {
-                    "className": "Center",
-                    "na": {
-                      "child": {
-                        "className": "Text",
-                        "pa": [
-                          "Above"
-                        ]
+                  "children": [
+                    {
+                      "className": "Expanded",
+                      "na": {
+                        "child": {
+                          "className": "Container",
+                          "na": {
+                            "color": "#(Colors.amber)",
+                            "child": {
+                              "className": "Center",
+                              "na": {
+                                "child": {
+                                  "className": "Text",
+                                  "pa": [
+                                    "Above"
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "className": "Divider",
+                      "na": {
+                        "height": 20,
+                        "thickness": 5,
+                        "indent": 20,
+                        "endIndent": 0,
+                        "color": "#(Colors.black)"
+                      }
+                    },
+                    {
+                      "className": "Container",
+                      "na": {
+                        "padding": {
+                          "className": "EdgeInsets.only",
+                          "na": {
+                            "left": 20
+                          }
+                        },
+                        "child": {
+                          "className": "Align",
+                          "na": {
+                            "alignment": "#(AlignmentDirectional.centerStart)",
+                            "child": {
+                              "className": "Text",
+                              "pa": [
+                                "Subheader"
+                              ],
+                              "na": {
+                                "textAlign": "#(TextAlign.start)"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "className": "Expanded",
+                      "na": {
+                        "child": {
+                          "className": "Container",
+                          "na": {
+                            "color": "#(Colors.blue)",
+                            "child": {
+                              "className": "Center",
+                              "na": {
+                                "child": {
+                                  "className": "Text",
+                                  "pa": [
+                                    "Below"
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
                       }
                     }
-                  }
-                }
-              }
-            }
-          },
-          {
-            "className": "Divider",
-            "na": {
-              "height": 20,
-              "thickness": 5,
-              "indent": 20,
-              "endIndent": 0,
-              "color": "#(Colors.black)"
-            }
-          },
-          {
-            "className": "Container",
-            "na": {
-              "padding": {
-                "className": "EdgeInsets.only",
-                "na": {
-                  "left": 20
-                }
-              },
-              "child": {
-                "className": "Align",
-                "na": {
-                  "alignment": "#(AlignmentDirectional.centerStart)",
-                  "child": {
-                    "className": "Text",
-                    "pa": [
-                      "Subheader"
-                    ],
-                    "na": {
-                      "textAlign": "#(TextAlign.start)"
-                    }
-                  }
+                  ]
                 }
               }
             }
@@ -78,20 +112,10 @@
             "className": "Expanded",
             "na": {
               "child": {
-                "className": "Container",
+                "className": "FairWidget",
                 "na": {
-                  "color": "#(Colors.blue)",
-                  "child": {
-                    "className": "Center",
-                    "na": {
-                      "child": {
-                        "className": "Text",
-                        "pa": [
-                          "Below"
-                        ]
-                      }
-                    }
-                  }
+                  "name": "DividerDemo",
+                  "path": "assets/bundle/fair/lib_divider_divider_demo.fair.json"
                 }
               }
             }

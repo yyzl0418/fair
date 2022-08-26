@@ -11,6 +11,8 @@ import 'package:flutter_all_widgets/decorated_box_transition/decorated_box_trans
 import 'package:flutter_all_widgets/default_text_style/default_text_style_demo.dart';
 import 'package:flutter_all_widgets/dismissible/dismissible_demo.dart';
 import 'package:flutter_all_widgets/divider/divider_demo.dart';
+import 'package:flutter_all_widgets/drag_target/drag_target_demo.dart';
+import 'package:flutter_all_widgets/draggable/draggable_demo.dart';
 import 'package:flutter_all_widgets/outlinebutton/outlinebutton_demo.dart';
 import 'package:flutter_all_widgets/page_view/page_view_demo.dart';
 import 'package:flutter_all_widgets/rich_text/rich_text_demo.dart';
@@ -92,6 +94,8 @@ class HomePage extends StatelessWidget {
     WidgetItem("DefaultTextStyle", DefaultTextStyleDemo()),
     WidgetItem("Dismissible", DismissibleDemo()),
     WidgetItem("Divider", DividerDemo()),
+    WidgetItem("DragTarget", DragTargetDemo()),
+    WidgetItem("Draggable", DraggableDemo()),
   ];
 
   Widget _widgetCard(WidgetItem item, int index) {
