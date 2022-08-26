@@ -41,7 +41,7 @@ class OutlineButtonDemo extends StatelessWidget {
 class FairOutlineButtonPage extends StatefulWidget {
   dynamic fairProps;
 
-  FairOutlineButtonPage({Key key, this.fairProps}) : super(key: key);
+  FairOutlineButtonPage({Key? key, this.fairProps}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => _FairOutlineButtonPageState();

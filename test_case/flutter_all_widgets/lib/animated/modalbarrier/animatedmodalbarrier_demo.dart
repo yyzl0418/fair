@@ -33,8 +33,8 @@ class FlutterAnimatedModalBarrierPage extends StatefulWidget{
 
 class _FlutterAnimatedModalBarrierPageState extends State<FlutterAnimatedModalBarrierPage> with SingleTickerProviderStateMixin{
 
-  AnimationController _animationController;
-  Animation _animation;
+  late AnimationController _animationController;
+  late Animation<Color?> _animation;
 
   @override
   void initState() {

@@ -1,9 +1,18 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_all_widgets/animated/widget/animatedwidget_demo.dart';
 import 'package:flutter_all_widgets/animatedalign/animatedalign_demo.dart';
+import 'package:flutter_all_widgets/custom_multi_child_layout/custom_multi_child_layout_demo.dart';
+import 'package:flutter_all_widgets/custom_paint/custom_paint_demo.dart';
+import 'package:flutter_all_widgets/custom_scrollview/custom_scrollview_demo.dart';
+import 'package:flutter_all_widgets/custom_single_child_layout/custom_single_child_layout_demo.dart';
+import 'package:flutter_all_widgets/data_table/data_table_demo.dart';
+import 'package:flutter_all_widgets/decorated_box/decorated_box_demo.dart';
+import 'package:flutter_all_widgets/decorated_box_transition/decorated_box_transition_demo.dart';
+import 'package:flutter_all_widgets/default_text_style/default_text_style_demo.dart';
+import 'package:flutter_all_widgets/dismissible/dismissible_demo.dart';
+import 'package:flutter_all_widgets/divider/divider_demo.dart';
 import 'package:flutter_all_widgets/outlinebutton/outlinebutton_demo.dart';
+import 'package:flutter_all_widgets/page_view/page_view_demo.dart';
 import 'package:flutter_all_widgets/rich_text/rich_text_demo.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
@@ -46,54 +55,70 @@ class HomePage extends StatelessWidget {
       child: GestureDetector(
           child: Text(title),
           onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => widget));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => widget));
           }),
     );
   }
 
-  @override
-  Widget build(BuildContext context) {
-    List<WidgetItem> widgets = [
-      WidgetItem("OutlineButton", OutlineButtonDemo()),
-      WidgetItem("Checkbox", CheckboxDemo()),
-      WidgetItem("CupertinoTabBar", CupertinoTabBarDemo()),
-      WidgetItem("CupertinoAlertDialog", CupertinoAlertDialogDemo()),
-      WidgetItem("CircularProgressIndicator", CircularProgressIndicatorDemo()),
-      WidgetItem("RichText", RichTextDemo()),
-      WidgetItem("AbsorbPointer", AbsorbPointerDemo()),
-      WidgetItem("AlertDialog", AlertDialogDemo()),
-      WidgetItem("AnimatedAlign", AnimatedAlignDemo()),
-      WidgetItem("AnimatedBuilder", AnimatedBuilderDemo()),
-      WidgetItem("AnimatedContainer", AnimatedContainerDemo()),
-      WidgetItem("AnimatedDefaultTextStyle", AnimatedDefaultTextStyleDemo()),
-      WidgetItem("AnimatedCrossFade", AnimatedCrossFadeDemo()),
-      WidgetItem("AnimatedListState", AnimatedListStateDemo()),
-      WidgetItem("AnimatedModalBarrier", AnimatedModalBarrierDemo()),
-      WidgetItem("AnimatedOpacity", AnimatedOpacityDemo()),
-      WidgetItem("AnimatedPhysicalModel", AnimatedPhysicalModelDemo()),
-      WidgetItem("AnimatedPositioned", AnimatedPositionedDemo()),
-      WidgetItem("AnimatedSize", AnimatedSizeDemo()),
-      WidgetItem("AnimatedWidget", AnimatedWidgetDemo()),
-    ];
+  List<WidgetItem> widgets = [
+    WidgetItem("OutlineButton", OutlineButtonDemo()),
+    WidgetItem("Checkbox", CheckboxDemo()),
+    WidgetItem("CupertinoTabBar", CupertinoTabBarDemo()),
+    WidgetItem("CupertinoAlertDialog", CupertinoAlertDialogDemo()),
+    WidgetItem("CircularProgressIndicator", CircularProgressIndicatorDemo()),
+    WidgetItem("RichText", RichTextDemo()),
+    WidgetItem("AbsorbPointer", AbsorbPointerDemo()),
+    WidgetItem("AlertDialog", AlertDialogDemo()),
+    WidgetItem("AnimatedAlign", AnimatedAlignDemo()),
+    WidgetItem("AnimatedBuilder", AnimatedBuilderDemo()),
+    WidgetItem("AnimatedContainer", AnimatedContainerDemo()),
+    WidgetItem("AnimatedDefaultTextStyle", AnimatedDefaultTextStyleDemo()),
+    WidgetItem("AnimatedCrossFade", AnimatedCrossFadeDemo()),
+    WidgetItem("AnimatedListState", AnimatedListStateDemo()),
+    WidgetItem("AnimatedModalBarrier", AnimatedModalBarrierDemo()),
+    WidgetItem("AnimatedOpacity", AnimatedOpacityDemo()),
+    WidgetItem("AnimatedPhysicalModel", AnimatedPhysicalModelDemo()),
+    WidgetItem("AnimatedPositioned", AnimatedPositionedDemo()),
+    WidgetItem("AnimatedSize", AnimatedSizeDemo()),
+    WidgetItem("AnimatedWidget", AnimatedWidgetDemo()),
+    WidgetItem("CustomMultiChildLayout", CustomMultiChildLayoutDemo()),
+    WidgetItem("CustomPaint", CustomPaintDemo()),
+    WidgetItem("CustomScrollView", CustomScrollViewDemo()),
+    WidgetItem("CustomSingleChildLayout", CustomSingleChildLayoutDemo()),
+    WidgetItem("DataTable", DataTableDemo()),
+    WidgetItem("DecoratedBox", DecoratedBoxDemo()),
+    WidgetItem("PageView", PageViewDemo()),
+    WidgetItem("DecoratedBoxTransition", DecoratedBoxTransitionDemo()),
+    WidgetItem("DefaultTextStyle", DefaultTextStyleDemo()),
+    WidgetItem("Dismissible", DismissibleDemo()),
+    WidgetItem("Divider", DividerDemo()),
+  ];
 
-    Widget _widgetCard(WidgetItem item, int index) {
-      return Container(
+  Widget _widgetCard(WidgetItem item, int index) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) =>
+        item.className
+        )
+        );
+      },
+      child: Container(
         height: ((index % 5 + 1) * 50).toDouble(),
         color: Colors.blueGrey,
         alignment: Alignment.center,
-        child: GestureDetector(
-            child: Text(
-              "$index:${item.title}",
-              style: TextStyle(color: Colors.white),
-            ),
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => item.className));
-            }),
-      );
-    }
+        child: Text(
+          "$index:${item.title}",
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+    );
+  }
 
+  late BuildContext context;
+
+  @override
+  Widget build(BuildContext context) {
+    this.context = context;
     return Scaffold(
         appBar: AppBar(
           title: Text("All Widget Demo"),
@@ -102,13 +127,13 @@ class HomePage extends StatelessWidget {
           crossAxisCount: 3,
           mainAxisSpacing: 4,
           crossAxisSpacing: 4,
-          shrinkWrap: true,
+          itemCount: widgets.length,
 //          physics:const NeverScrollableScrollPhysics(),
           itemBuilder: (BuildContext context, int index) {
             if (index < widgets.length) {
               return _widgetCard(widgets[index], index);
             }
-            return null;
+            return Container();
           },
         ));
   }

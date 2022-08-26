@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 class FairAlertDialogPage extends StatefulWidget {
   dynamic fairProps;
 
-  FairAlertDialogPage({Key key, this.fairProps}) : super(key: key);
+  FairAlertDialogPage({Key? key, this.fairProps}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => _FairAlertDialogState();

@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_all_widgets/animated/widget/spinning_container.dart';
 
 import 'animatedwidget_widget.dart';
 
@@ -31,7 +30,7 @@ class FlutterAnimatedWidgetPage extends StatefulWidget {
 
 class _FlutterAnimatedWidgetPageState extends State<FlutterAnimatedWidgetPage> with TickerProviderStateMixin{
 
-    AnimationController _controller;
+   late AnimationController _controller;
 
     @override
     void initState() {

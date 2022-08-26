@@ -14,7 +14,7 @@ class AnimatedBuilderDemo extends StatelessWidget {
 }
 
 class FlutterAnimatedBuilderPage extends StatefulWidget {
-  const FlutterAnimatedBuilderPage({Key key}) : super(key: key);
+  const FlutterAnimatedBuilderPage({Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => _FlutterAnimatedBuilderPageState();
@@ -22,7 +22,7 @@ class FlutterAnimatedBuilderPage extends StatefulWidget {
 
 class _FlutterAnimatedBuilderPageState extends State<FlutterAnimatedBuilderPage>
     with TickerProviderStateMixin {
-    AnimationController _controller;
+   late AnimationController _controller;
 
    @override
   void initState() {
@@ -45,7 +45,7 @@ class _FlutterAnimatedBuilderPageState extends State<FlutterAnimatedBuilderPage>
           child: Text('Whee!'),
         ),
       ),
-      builder: (BuildContext context, Widget child) {
+      builder: (BuildContext context, Widget? child) {
         return Transform.rotate(
           angle: _controller.value * 2.0 * math.pi,
           child: child,

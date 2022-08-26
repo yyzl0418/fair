@@ -11,8 +11,8 @@ class FairAnimatedModalBarrierPage extends StatefulWidget{
 
 class _FairAnimatedModalBarrierPageState extends State<FairAnimatedModalBarrierPage> with SingleTickerProviderStateMixin{
 
-  AnimationController _animationController;
-  Animation _animation;
+  late AnimationController _animationController;
+  late Animation<Color?> _animation;
 
   @override
   void initState() {

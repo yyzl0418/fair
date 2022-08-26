@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 class FairCupertinoTabBarPage extends StatefulWidget {
   dynamic fairProps;
 
-  FairCupertinoTabBarPage({Key key, this.fairProps}) : super(key: key);
+  FairCupertinoTabBarPage({Key? key, this.fairProps}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => _FairCupertinoTabBarState();
@@ -21,7 +21,6 @@ class _FairCupertinoTabBarState extends State<FairCupertinoTabBarPage> {
   @FairProps()
   var fairProps;
 
-  List<String> tabs;
 
   @override
   void initState() {
@@ -37,7 +36,7 @@ class _FairCupertinoTabBarState extends State<FairCupertinoTabBarPage> {
     return Sugar.mapEach(
         _getTabList(),
             (index, item) => BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home), label: item)).toList();
+            icon: Icon(CupertinoIcons.home), label: item as String)).toList();
   }
 
   CupertinoTabBar _getTabBarWidget() {

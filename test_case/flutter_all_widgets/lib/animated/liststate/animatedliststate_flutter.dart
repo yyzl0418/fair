@@ -15,19 +15,19 @@ class _FlutterAnimatedListStatePageState extends State<FlutterAnimatedListStateP
   void _addItem() {
     final int _index = _list.length;
     _list.insert(_index, _index);
-    _listKey.currentState.insertItem(_index);
+    _listKey.currentState?.insertItem(_index);
   }
 
   void _removeItem() {
     final int _index = _list.length - 1;
     var item = _list[_index].toString();
-    _listKey.currentState.removeItem(
+    _listKey.currentState?.removeItem(
         _index, (context, animation) => _buildItem(item, animation));
     _list.removeAt(_index);
 
   }
 
-  Widget _buildItem(String _item, Animation _animation) {
+  Widget _buildItem(String _item, Animation<double> _animation) {
     return SizeTransition(
       sizeFactor: _animation,
       child: Card(
@@ -48,7 +48,7 @@ class _FlutterAnimatedListStatePageState extends State<FlutterAnimatedListStateP
       body: AnimatedList(
         key: _listKey,
         initialItemCount: _list.length,
-        itemBuilder: (BuildContext context, int index, Animation animation) {
+        itemBuilder: (BuildContext context, int index, Animation<double> animation) {
           return _buildItem(_list[index].toString(), animation);
         },
       ),

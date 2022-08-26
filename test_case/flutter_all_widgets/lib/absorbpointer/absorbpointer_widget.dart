@@ -10,7 +10,7 @@ class FairAbsorbPointerPage extends StatefulWidget{
 
   dynamic fairProps;
 
-  FairAbsorbPointerPage({Key key,this.fairProps}): super(key: key);
+  FairAbsorbPointerPage({Key? key,this.fairProps}): super(key: key);
 
   @override
   State<StatefulWidget> createState()=>_FairAbsorbPointerPageState();
@@ -43,7 +43,7 @@ class _FairAbsorbPointerPageState extends State<FairAbsorbPointerPage>{
   }
 
   ButtonStyle _getButtonStyle(){
-    ElevatedButton.styleFrom(primary: Colors.blue.shade200);
+   return ElevatedButton.styleFrom(primary: Colors.blue.shade200);
   }
 
   @override

@@ -1,0 +1,102 @@
+{
+  "className": "Scaffold",
+  "na": {
+    "appBar": {
+      "className": "AppBar",
+      "na": {
+        "title": {
+          "className": "Text",
+          "pa": [
+            "DataTableDemo"
+          ]
+        }
+      }
+    },
+    "body": {
+      "className": "Column",
+      "na": {
+        "children": [
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "Container",
+                "na": {
+                  "child": {
+                    "className": "Center",
+                    "na": {
+                      "child": {
+                        "className": "DecoratedBox",
+                        "na": {
+                          "decoration": {
+                            "className": "BoxDecoration",
+                            "na": {
+                              "gradient": {
+                                "className": "RadialGradient",
+                                "na": {
+                                  "center": {
+                                    "className": "Alignment"
+                                  },
+                                  "radius": 0.15,
+                                  "colors": [
+                                    {
+                                      "className": "Color",
+                                      "pa": [
+                                        "0xFFEEEEEE"
+                                      ]
+                                    },
+                                    {
+                                      "className": "Color",
+                                      "pa": [
+                                        "0xFF111133"
+                                      ]
+                                    }
+                                  ],
+                                  "stops": [
+                                    0.9,
+                                    1.0
+                                  ]
+                                }
+                              }
+                            }
+                          },
+                          "child": {
+                            "className": "Text",
+                            "pa": [
+                              "DecoratedBox"
+                            ],
+                            "na": {
+                              "style": {
+                                "className": "TextStyle",
+                                "na": {
+                                  "color": "#(Colors.red)"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "FairWidget",
+                "na": {
+                  "name": "DecoratedBoxDemo",
+                  "path": "assets/bundle/fair/lib_decorated_box_decorated_box_demo.fair.json"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "methodMap": {}
+}

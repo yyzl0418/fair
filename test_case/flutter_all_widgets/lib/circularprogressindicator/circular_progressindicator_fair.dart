@@ -1,12 +1,11 @@
 import 'package:fair/fair.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 @FairPatch()
 class FairCircularProgressIndicator extends StatefulWidget {
   dynamic fairProps;
 
-  FairCircularProgressIndicator({Key key, this.fairProps}) : super(key: key);
+  FairCircularProgressIndicator({Key? key, this.fairProps}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => _FairCircularProgressIndicatorState();
@@ -14,7 +13,7 @@ class FairCircularProgressIndicator extends StatefulWidget {
 
 class _FairCircularProgressIndicatorState
     extends State<FairCircularProgressIndicator> with TickerProviderStateMixin {
-  AnimationController controller;
+ late AnimationController controller;
 
   @FairProps()
   var fairProps;

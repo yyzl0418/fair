@@ -61,7 +61,7 @@ class _FlutterCheckboxState extends State<FlutterCheckboxPage> {
         fillColor: MaterialStateProperty.resolveWith(getColor),
         onChanged: (value) {
           setState(() {
-            isChecked = value;
+            isChecked = value??false;
           });
         });
   }

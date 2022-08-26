@@ -12,7 +12,7 @@ class FairRichTextPage extends StatefulWidget{
 
   dynamic fairProps;
 
-  FairRichTextPage({Key key, this.fairProps}):super(key: key);
+  FairRichTextPage({Key? key, this.fairProps}):super(key: key);
 
   @override
   State<StatefulWidget> createState()=> _FairRichTextPageState();

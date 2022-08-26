@@ -11,7 +11,7 @@ class FairAnimatedWidgetPage extends StatefulWidget{
 }
 
 class _FairAnimatedWidgetPageState extends State<FairAnimatedWidgetPage> with TickerProviderStateMixin{
-  AnimationController _controller;
+ late AnimationController _controller;
 
   @override
   void initState() {
@@ -36,7 +36,7 @@ class _FairAnimatedWidgetPageState extends State<FairAnimatedWidgetPage> with Ti
 }
 
 class SpinningContainer extends AnimatedWidget {
-  SpinningContainer({ Key key, AnimationController controller,
+  SpinningContainer({ Key? key,required AnimationController controller,
   }) : super(key: key, listenable: controller);
 
   Animation<double> get _progress => listenable as Animation<double>;

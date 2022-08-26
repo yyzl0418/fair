@@ -27,7 +27,7 @@ class CircularProgressIndicatorDemo extends StatelessWidget {
 }
 
 class FlutterCircularProgressIndicator extends StatefulWidget {
-  FlutterCircularProgressIndicator({Key key}) : super(key: key);
+  FlutterCircularProgressIndicator({Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() =>
@@ -37,7 +37,7 @@ class FlutterCircularProgressIndicator extends StatefulWidget {
 class _FlutterCircularProgressIndicatorState
     extends State<FlutterCircularProgressIndicator>
     with TickerProviderStateMixin {
-    AnimationController controller;
+   late AnimationController controller;
 
   @override
   void initState() {

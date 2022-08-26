@@ -14,7 +14,7 @@ description: A new Flutter application.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -55,15 +55,15 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/bundle/
+    - assets/bundle/fair/
     - assets/bundle/animated/
     - assets/bundle/checkbox/
-    - assets/bundle/cupertinotabbar/
     - assets/bundle/outlinebutton/
     - assets/bundle/cupertinoalertdialog/
-    - assets/bundle/circularprogressindicator/
     - assets/bundle/richtext/
     - assets/bundle/absorbpointer/
     - assets/bundle/alertdialog/
+    - assets/bundle/datatable/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

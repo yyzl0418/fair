@@ -577,4 +577,5 @@ const widgetNames = {
   'AnimationStatus': false,
   'CatmullRomCurve': false,
   'Curves': false,
+  'DataColumn': true,
 };

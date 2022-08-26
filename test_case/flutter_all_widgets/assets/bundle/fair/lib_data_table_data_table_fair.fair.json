@@ -1,0 +1,192 @@
+{
+  "className": "Container",
+  "na": {
+    "child": {
+      "className": "DataTable",
+      "na": {
+        "columns": [
+          {
+            "className": "DataColumn",
+            "na": {
+              "label": {
+                "className": "Text",
+                "pa": [
+                  "Name"
+                ],
+                "na": {
+                  "style": {
+                    "className": "TextStyle",
+                    "na": {
+                      "fontStyle": "#(FontStyle.italic)"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "className": "DataColumn",
+            "na": {
+              "label": {
+                "className": "Text",
+                "pa": [
+                  "Age"
+                ],
+                "na": {
+                  "style": {
+                    "className": "TextStyle",
+                    "na": {
+                      "fontStyle": "#(FontStyle.italic)"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "className": "DataColumn",
+            "na": {
+              "label": {
+                "className": "Text",
+                "pa": [
+                  "Role"
+                ],
+                "na": {
+                  "style": {
+                    "className": "TextStyle",
+                    "na": {
+                      "fontStyle": "#(FontStyle.italic)"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "rows": [
+          {
+            "className": "DataRow",
+            "na": {
+              "cells": [
+                {
+                  "className": "DataCell",
+                  "pa": [
+                    {
+                      "className": "Text",
+                      "pa": [
+                        "Sarah"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "className": "DataCell",
+                  "pa": [
+                    {
+                      "className": "Text",
+                      "pa": [
+                        "19"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "className": "DataCell",
+                  "pa": [
+                    {
+                      "className": "Text",
+                      "pa": [
+                        "Student"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "className": "DataRow",
+            "na": {
+              "cells": [
+                {
+                  "className": "DataCell",
+                  "pa": [
+                    {
+                      "className": "Text",
+                      "pa": [
+                        "Janine"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "className": "DataCell",
+                  "pa": [
+                    {
+                      "className": "Text",
+                      "pa": [
+                        "43"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "className": "DataCell",
+                  "pa": [
+                    {
+                      "className": "Text",
+                      "pa": [
+                        "Professor"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "className": "DataRow",
+            "na": {
+              "cells": [
+                {
+                  "className": "DataCell",
+                  "pa": [
+                    {
+                      "className": "Text",
+                      "pa": [
+                        "William"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "className": "DataCell",
+                  "pa": [
+                    {
+                      "className": "Text",
+                      "pa": [
+                        "27"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "className": "DataCell",
+                  "pa": [
+                    {
+                      "className": "Text",
+                      "pa": [
+                        "Associate Professor"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "methodMap": {}
+}

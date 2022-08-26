@@ -1,0 +1,19 @@
+{
+  "className": "Container",
+  "na": {
+    "child": {
+      "className": "RichText",
+      "na": {
+        "text": {
+          "className": "TextSpan",
+          "na": {
+            "text": "Hello",
+            "style": "$(style:)",
+            "children": "%(_getChildren)"
+          }
+        }
+      }
+    }
+  },
+  "methodMap": {}
+}

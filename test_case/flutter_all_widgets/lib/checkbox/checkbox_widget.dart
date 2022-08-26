@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 @FairPatch()
 class FairCheckboxPage extends StatefulWidget {
-  FairCheckboxPage({Key key, this.fairProps}) : super(key: key);
+  FairCheckboxPage({Key? key, this.fairProps}) : super(key: key);
 
   dynamic fairProps;
 
@@ -16,7 +16,7 @@ class _FairCheckboxState extends State<FairCheckboxPage> {
   @FairProps()
   var fairProps;
 
-  bool _isChecked;
+  bool _isChecked=false;
 
   @override
   void initState() {
@@ -32,9 +32,9 @@ class _FairCheckboxState extends State<FairCheckboxPage> {
     return fairProps['isChecked'];
   }
 
-  void _onChange(bool value) {
+  void _onChange(bool? value) {
     setState(() {
-      _isChecked = value;
+      _isChecked = (value??false);
     });
   }
 

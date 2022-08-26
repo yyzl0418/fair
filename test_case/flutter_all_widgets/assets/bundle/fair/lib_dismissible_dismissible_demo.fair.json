@@ -1,0 +1,66 @@
+{
+  "className": "Scaffold",
+  "na": {
+    "appBar": {
+      "className": "AppBar",
+      "na": {
+        "title": {
+          "className": "Text",
+          "pa": [
+            "DecoratedBoxTransitionDemo"
+          ]
+        }
+      }
+    },
+    "body": {
+      "className": "Column",
+      "na": {
+        "children": [
+          {
+            "className": "Dismissible",
+            "na": {
+              "background": {
+                "className": "Container",
+                "na": {
+                  "height": 200,
+                  "color": "#(Colors.green)"
+                }
+              },
+              "key": {
+                "className": "ValueKey",
+                "pa": [
+                  1
+                ]
+              },
+              "onDismissed": "",
+              "child": {
+                "className": "ListTile",
+                "na": {
+                  "title": {
+                    "className": "Text",
+                    "pa": [
+                      "Item 1"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "FairWidget",
+                "na": {
+                  "name": "DismissibleDemo",
+                  "path": "assets/bundle/fair/lib_dismissible_dismissible_demo.fair.json"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "methodMap": {}
+}
