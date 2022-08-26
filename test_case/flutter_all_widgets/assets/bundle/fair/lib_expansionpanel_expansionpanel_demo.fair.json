@@ -1,0 +1,36 @@
+{
+  "className": "Scaffold",
+  "na": {
+    "appBar": {
+      "className": "AppBar",
+      "na": {
+        "title": {
+          "className": "Text",
+          "pa": [
+            "ExpansionPanelDemo"
+          ]
+        }
+      }
+    },
+    "body": {
+      "className": "SingleChildScrollView",
+      "na": {
+        "child": {
+          "className": "Container",
+          "na": {
+            "child": "%(_buildPanel)"
+          }
+        }
+      }
+    }
+  },
+  "methodMap": {
+    "_buildPanel": {
+      "className": "ExpansionPanelList",
+      "na": {
+        "expansionCallback": "%(setState)",
+        "children": {}
+      }
+    }
+  }
+}

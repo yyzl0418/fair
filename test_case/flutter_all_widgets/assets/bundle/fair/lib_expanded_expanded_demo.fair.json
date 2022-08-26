@@ -17,31 +17,54 @@
       "na": {
         "children": [
           {
-            "className": "Container",
+            "className": "Expanded",
             "na": {
-              "color": "#(Colors.blue)",
-              "height": 100,
-              "width": 100
+              "child": {
+                "className": "Column",
+                "na": {
+                  "children": [
+                    {
+                      "className": "Container",
+                      "na": {
+                        "color": "#(Colors.blue)",
+                        "height": 100,
+                        "width": 100
+                      }
+                    },
+                    {
+                      "className": "Expanded",
+                      "na": {
+                        "child": {
+                          "className": "Container",
+                          "na": {
+                            "color": "#(Colors.amber)",
+                            "width": 100
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "className": "Container",
+                      "na": {
+                        "color": "#(Colors.blue)",
+                        "height": 100,
+                        "width": 100
+                      }
+                    }
+                  ]
+                }
+              }
             }
           },
           {
             "className": "Expanded",
             "na": {
               "child": {
-                "className": "Container",
+                "className": "FairWidget",
                 "na": {
-                  "color": "#(Colors.amber)",
-                  "width": 100
+                  "path": "assets/bundle/fair/lib_expanded_expanded_demo.fair.json"
                 }
               }
-            }
-          },
-          {
-            "className": "Container",
-            "na": {
-              "color": "#(Colors.blue)",
-              "height": 100,
-              "width": 100
             }
           }
         ]

@@ -18,6 +18,9 @@ import 'package:flutter_all_widgets/drawer/drawer_demo.dart';
 import 'package:flutter_all_widgets/dropdownbutton/dropdownbutton_demo.dart';
 import 'package:flutter_all_widgets/elevatedbutton/elevatedbutton_demo.dart';
 import 'package:flutter_all_widgets/expanded/expanded_demo.dart';
+import 'package:flutter_all_widgets/expansionpanel/expansionpanel_demo.dart';
+import 'package:flutter_all_widgets/fadetransition/fadetransition_demo.dart';
+import 'package:flutter_all_widgets/fittedbox/fittedbox_demo.dart';
 import 'package:flutter_all_widgets/outlinebutton/outlinebutton_demo.dart';
 import 'package:flutter_all_widgets/page_view/page_view_demo.dart';
 import 'package:flutter_all_widgets/rich_text/rich_text_demo.dart';
@@ -108,6 +111,9 @@ class HomePage extends StatelessWidget {
     WidgetItem("ElevatedButton", ElevatedButtonDemo()),
     WidgetItem("Semantics", SemanticsDemo()),
     WidgetItem("Expanded", ExpandedDemo()),
+    WidgetItem("ExpansionPanel", ExpansionPanelDemo()),
+    WidgetItem("FadeTransition", FadeTransitionDemo()),
+    WidgetItem("FittedBox", FittedBoxDemo()),
   ];
 
   Widget _widgetCard(WidgetItem item, int index) {
