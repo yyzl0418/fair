@@ -1,0 +1,188 @@
+{
+  "className": "Scaffold",
+  "na": {
+    "appBar": {
+      "className": "AppBar",
+      "na": {
+        "title": {
+          "className": "Text",
+          "pa": [
+            "DragTargetDemo"
+          ]
+        }
+      }
+    },
+    "body": {
+      "className": "Container",
+      "na": {
+        "width": "$(double.infinity)",
+        "height": "$(double.infinity)",
+        "child": {
+          "className": "Stack",
+          "na": {
+            "alignment": "#(Alignment.center)",
+            "children": [
+              {
+                "className": "Positioned",
+                "na": {
+                  "top": 10,
+                  "left": 10,
+                  "child": {
+                    "className": "Draggable",
+                    "na": {
+                      "data": "aa",
+                      "child": {
+                        "className": "Container",
+                        "na": {
+                          "color": "#(Colors.blue)",
+                          "width": 100,
+                          "height": 100,
+                          "child": {
+                            "className": "Text",
+                            "pa": [
+                              "aa"
+                            ],
+                            "na": {
+                              "style": {
+                                "className": "TextStyle",
+                                "na": {
+                                  "fontSize": 14,
+                                  "color": "#(Colors.white)"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "feedback": {
+                        "className": "Container",
+                        "na": {
+                          "color": "#(Colors.red)",
+                          "width": 100,
+                          "height": 100,
+                          "child": {
+                            "className": "Text",
+                            "pa": [
+                              "aa"
+                            ],
+                            "na": {
+                              "style": {
+                                "className": "TextStyle",
+                                "na": {
+                                  "fontSize": 14,
+                                  "color": "#(Colors.white)"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "className": "Positioned",
+                "na": {
+                  "top": 10,
+                  "right": 10,
+                  "child": {
+                    "className": "Draggable",
+                    "na": {
+                      "data": "bb",
+                      "child": {
+                        "className": "Container",
+                        "na": {
+                          "color": "#(Colors.blue)",
+                          "width": 100,
+                          "height": 100,
+                          "child": {
+                            "className": "Text",
+                            "pa": [
+                              "bb"
+                            ],
+                            "na": {
+                              "style": {
+                                "className": "TextStyle",
+                                "na": {
+                                  "fontSize": 14,
+                                  "color": "#(Colors.white)"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "feedback": {
+                        "className": "Container",
+                        "na": {
+                          "color": "#(Colors.red)",
+                          "width": 100,
+                          "height": 100,
+                          "child": {
+                            "className": "Text",
+                            "pa": [
+                              "bb"
+                            ],
+                            "na": {
+                              "style": {
+                                "className": "TextStyle",
+                                "na": {
+                                  "fontSize": 14,
+                                  "color": "#(Colors.white)"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "className": "Positioned",
+                "na": {
+                  "child": {
+                    "className": "DragTarget",
+                    "na": {
+                      "builder": {
+                        "className": "Container",
+                        "na": {
+                          "color": "^(c)",
+                          "width": 100,
+                          "height": 100,
+                          "child": {
+                            "className": "Text",
+                            "pa": [
+                              "^(s)"
+                            ],
+                            "na": {
+                              "style": {
+                                "className": "TextStyle",
+                                "na": {
+                                  "fontSize": 14,
+                                  "color": "#(Colors.white)"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "onWillAccept": "%(print)",
+                      "onAccept": "%(print)",
+                      "onAcceptWithDetails": "%(print)",
+                      "onLeave": "%(print)",
+                      "onMove": "%(print)"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "methodMap": {}
+}

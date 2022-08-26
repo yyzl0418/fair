@@ -1,0 +1,107 @@
+{
+  "className": "Scaffold",
+  "na": {
+    "appBar": {
+      "className": "AppBar",
+      "na": {
+        "title": {
+          "className": "Text",
+          "pa": [
+            "DecoratedBoxTransitionDemo"
+          ]
+        }
+      }
+    },
+    "body": {
+      "className": "Column",
+      "na": {
+        "children": [
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "Row",
+                "na": {
+                  "mainAxisAlignment": "#(MainAxisAlignment.spaceEvenly)",
+                  "children": [
+                    {
+                      "className": "Draggable",
+                      "na": {
+                        "data": 10,
+                        "feedback": {
+                          "className": "Container",
+                          "na": {
+                            "color": "#(Colors.deepOrange)",
+                            "height": 100,
+                            "width": 100,
+                            "child": {
+                              "className": "Icon",
+                              "pa": [
+                                "#(Icons.directions_run)"
+                              ]
+                            }
+                          }
+                        },
+                        "childWhenDragging": {
+                          "className": "Container",
+                          "na": {
+                            "height": 100.0,
+                            "width": 100.0,
+                            "color": "#(Colors.pinkAccent)",
+                            "child": {
+                              "className": "Center",
+                              "na": {
+                                "child": {
+                                  "className": "Text",
+                                  "pa": [
+                                    "Child When Dragging"
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "child": {
+                          "className": "Container",
+                          "na": {
+                            "height": 100.0,
+                            "width": 100.0,
+                            "color": "#(Colors.lightGreenAccent)",
+                            "child": {
+                              "className": "Center",
+                              "na": {
+                                "child": {
+                                  "className": "Text",
+                                  "pa": [
+                                    "Draggable"
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "FairWidget",
+                "na": {
+                  "name": "DraggableDemo",
+                  "path": "assets/bundle/fair/lib_draggable_draggable_demo.fair.json"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "methodMap": {}
+}

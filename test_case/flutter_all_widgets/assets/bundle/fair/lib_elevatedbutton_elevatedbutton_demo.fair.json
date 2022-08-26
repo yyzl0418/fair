@@ -1,0 +1,105 @@
+{
+  "className": "Scaffold",
+  "na": {
+    "appBar": {
+      "className": "AppBar",
+      "na": {
+        "title": {
+          "className": "Text",
+          "pa": [
+            "ElevatedButtonDemo"
+          ]
+        }
+      }
+    },
+    "body": {
+      "className": "Column",
+      "na": {
+        "children": [
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "Center",
+                "na": {
+                  "child": {
+                    "className": "Column",
+                    "na": {
+                      "mainAxisSize": "#(MainAxisSize.min)",
+                      "children": [
+                        {
+                          "className": "ElevatedButton",
+                          "na": {
+                            "style": {
+                              "className": "ElevatedButton.styleFrom",
+                              "na": {
+                                "textStyle": {
+                                  "className": "TextStyle",
+                                  "na": {
+                                    "fontSize": 20
+                                  }
+                                }
+                              }
+                            },
+                            "child": {
+                              "className": "Text",
+                              "pa": [
+                                "Disabled"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "className": "SizedBox",
+                          "na": {
+                            "height": 30
+                          }
+                        },
+                        {
+                          "className": "ElevatedButton",
+                          "na": {
+                            "style": {
+                              "className": "ElevatedButton.styleFrom",
+                              "na": {
+                                "textStyle": {
+                                  "className": "TextStyle",
+                                  "na": {
+                                    "fontSize": 20
+                                  }
+                                }
+                              }
+                            },
+                            "onPressed": "",
+                            "child": {
+                              "className": "Text",
+                              "pa": [
+                                "Enabled"
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "FairWidget",
+                "na": {
+                  "path": "assets/bundle/fair/lib_elevatedbutton_elevatedbutton_demo.fair.json",
+                  "name": "ElevatedButtonDemo"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "methodMap": {}
+}

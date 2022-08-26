@@ -15,9 +15,13 @@ import 'package:flutter_all_widgets/drag_target/drag_target_demo.dart';
 import 'package:flutter_all_widgets/draggable/draggable_demo.dart';
 import 'package:flutter_all_widgets/draggablescrollablesheet/draggablescrollablesheet_demo.dart';
 import 'package:flutter_all_widgets/drawer/drawer_demo.dart';
+import 'package:flutter_all_widgets/dropdownbutton/dropdownbutton_demo.dart';
+import 'package:flutter_all_widgets/elevatedbutton/elevatedbutton_demo.dart';
+import 'package:flutter_all_widgets/expanded/expanded_demo.dart';
 import 'package:flutter_all_widgets/outlinebutton/outlinebutton_demo.dart';
 import 'package:flutter_all_widgets/page_view/page_view_demo.dart';
 import 'package:flutter_all_widgets/rich_text/rich_text_demo.dart';
+import 'package:flutter_all_widgets/semantics/semantics_demo.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 import 'absorbpointer/absorbpointer_demo.dart';
@@ -100,6 +104,10 @@ class HomePage extends StatelessWidget {
     WidgetItem("Draggable", DraggableDemo()),
     WidgetItem("DraggableScrollableSheet", DraggableScrollableSheetDemo()),
     WidgetItem("Drawer", DrawerDemo()),
+    WidgetItem("DropdownButton", DropdownButtonDemo()),
+    WidgetItem("ElevatedButton", ElevatedButtonDemo()),
+    WidgetItem("Semantics", SemanticsDemo()),
+    WidgetItem("Expanded", ExpandedDemo()),
   ];
 
   Widget _widgetCard(WidgetItem item, int index) {
