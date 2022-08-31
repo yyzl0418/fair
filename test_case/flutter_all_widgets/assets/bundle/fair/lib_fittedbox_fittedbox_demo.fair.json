@@ -13,28 +13,51 @@
       }
     },
     "body": {
-      "className": "Center",
+      "className": "Column",
       "na": {
-        "child": {
-          "className": "Container",
-          "na": {
-            "height": 400,
-            "width": 300,
-            "color": "#(Colors.red)",
-            "child": {
-              "className": "FittedBox",
-              "na": {
-                "fit": "#(BoxFit.fill)",
-                "child": {
-                  "className": "Image.network",
-                  "pa": [
-                    "https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg"
-                  ]
+        "children": [
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "Center",
+                "na": {
+                  "child": {
+                    "className": "Container",
+                    "na": {
+                      "height": 400,
+                      "width": 300,
+                      "color": "#(Colors.red)",
+                      "child": {
+                        "className": "FittedBox",
+                        "na": {
+                          "fit": "#(BoxFit.fill)",
+                          "child": {
+                            "className": "Image.network",
+                            "pa": [
+                              "https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "FairWidget",
+                "na": {
+                  "path": "assets/bundle/fair/lib_fittedbox_fittedbox_demo.fair.json"
                 }
               }
             }
           }
-        }
+        ]
       }
     }
   },

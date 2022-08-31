@@ -1,0 +1,36 @@
+{
+  "className": "Scaffold",
+  "na": {
+    "appBar": {
+      "className": "AppBar",
+      "na": {
+        "title": {
+          "className": "Text",
+          "pa": [
+            "FloatingActionButtonDemo"
+          ]
+        }
+      }
+    },
+    "floatingActionButton": {
+      "className": "FloatingActionButton",
+      "na": {
+        "onPressed": "",
+        "backgroundColor": "#(Colors.green)",
+        "child": {
+          "className": "Icon",
+          "pa": [
+            "#(Icons.navigation)"
+          ]
+        }
+      }
+    },
+    "body": {
+      "className": "FairWidget",
+      "na": {
+        "path": "assets/bundle/fair/lib_floatingactionbutton_floatingactionbutton_demo.fair.json"
+      }
+    }
+  },
+  "methodMap": {}
+}
