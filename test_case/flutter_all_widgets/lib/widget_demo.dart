@@ -28,6 +28,10 @@ import 'package:flutter_all_widgets/form/form_demo.dart';
 import 'package:flutter_all_widgets/fractionallysizedbox/fractionallysizedbox_demo.dart';
 import 'package:flutter_all_widgets/fractionaltranslation/fractionaltranslation_demo.dart';
 import 'package:flutter_all_widgets/gridview/gridview_demo.dart';
+import 'package:flutter_all_widgets/hero/hero_demo.dart';
+import 'package:flutter_all_widgets/icon/icon_demo.dart';
+import 'package:flutter_all_widgets/iconbutton/iconbutton_demo.dart';
+import 'package:flutter_all_widgets/indexedstack/indexedstack_demo.dart';
 import 'package:flutter_all_widgets/outlinebutton/outlinebutton_demo.dart';
 import 'package:flutter_all_widgets/page_view/page_view_demo.dart';
 import 'package:flutter_all_widgets/rich_text/rich_text_demo.dart';
@@ -50,6 +54,7 @@ import 'checkbox/checkbox_demo.dart';
 import 'circularProgressIndicator/circular_progressIndicator_demo.dart';
 import 'cupertino_tabbar/cupertino_tabbar_demo.dart';
 import 'cupertinoalertdialog/cupertino_alert_dialog_demo.dart';
+import 'ignorepointer/ignorepointer_demo.dart';
 import 'widget_item.dart';
 
 class WidgetDemo extends StatelessWidget {
@@ -128,6 +133,11 @@ class HomePage extends StatelessWidget {
     WidgetItem("FractionalTranslation", FractionalTranslationDemo()),
     WidgetItem("FractionallySizedBox", FractionallySizedBoxDemo()),
     WidgetItem("GridViewDemo", GridViewDemo()),
+    WidgetItem("Hero", HeroDemo()),
+    WidgetItem("Icon", IconDemo()),
+    WidgetItem("IconButton", IconButtonDemo()),
+    WidgetItem("IgnorePointer", IgnorePointerDemo()),
+    WidgetItem("IndexedStack", IndexedStackDemo()),
   ];
 
   Widget _widgetCard(WidgetItem item, int index) {

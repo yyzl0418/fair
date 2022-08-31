@@ -13,118 +13,147 @@
       }
     },
     "body": {
-      "className": "GridView.count",
+      "className": "Column",
       "na": {
-        "primary": false,
-        "padding": {
-          "className": "EdgeInsets.all",
-          "pa": [
-            20
-          ]
-        },
-        "crossAxisSpacing": 10,
-        "mainAxisSpacing": 10,
-        "crossAxisCount": 2,
         "children": [
           {
-            "className": "Container",
+            "className": "Expanded",
             "na": {
-              "padding": {
-                "className": "EdgeInsets.all",
-                "pa": [
-                  8
-                ]
-              },
               "child": {
-                "className": "Text",
-                "pa": [
-                  "He'd have you all unravel at the"
-                ]
+                "className": "GridView.count",
+                "na": {
+                  "primary": false,
+                  "padding": {
+                    "className": "EdgeInsets.all",
+                    "pa": [
+                      20
+                    ]
+                  },
+                  "crossAxisSpacing": 10,
+                  "mainAxisSpacing": 10,
+                  "crossAxisCount": 2,
+                  "children": [
+                    {
+                      "className": "Container",
+                      "na": {
+                        "padding": {
+                          "className": "EdgeInsets.all",
+                          "pa": [
+                            8
+                          ]
+                        },
+                        "color": "#(Colors.red)",
+                        "child": {
+                          "className": "Text",
+                          "pa": [
+                            "He'd have you all unravel at the"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "className": "Container",
+                      "na": {
+                        "padding": {
+                          "className": "EdgeInsets.all",
+                          "pa": [
+                            8
+                          ]
+                        },
+                        "color": "#(Colors.green)",
+                        "child": {
+                          "className": "Text",
+                          "pa": [
+                            "Heed not the rabble"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "className": "Container",
+                      "na": {
+                        "padding": {
+                          "className": "EdgeInsets.all",
+                          "pa": [
+                            8
+                          ]
+                        },
+                        "color": "#(Colors.orange)",
+                        "child": {
+                          "className": "Text",
+                          "pa": [
+                            "Sound of screams but the"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "className": "Container",
+                      "na": {
+                        "padding": {
+                          "className": "EdgeInsets.all",
+                          "pa": [
+                            8
+                          ]
+                        },
+                        "color": "#(Colors.teal)",
+                        "child": {
+                          "className": "Text",
+                          "pa": [
+                            "Who scream"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "className": "Container",
+                      "na": {
+                        "padding": {
+                          "className": "EdgeInsets.all",
+                          "pa": [
+                            8
+                          ]
+                        },
+                        "color": "#(Colors.blue)",
+                        "child": {
+                          "className": "Text",
+                          "pa": [
+                            "Revolution is coming..."
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "className": "Container",
+                      "na": {
+                        "padding": {
+                          "className": "EdgeInsets.all",
+                          "pa": [
+                            8
+                          ]
+                        },
+                        "color": "#(Colors.teal)",
+                        "child": {
+                          "className": "Text",
+                          "pa": [
+                            "Revolution, they..."
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
               }
             }
           },
           {
-            "className": "Container",
+            "className": "Expanded",
             "na": {
-              "padding": {
-                "className": "EdgeInsets.all",
-                "pa": [
-                  8
-                ]
-              },
               "child": {
-                "className": "Text",
-                "pa": [
-                  "Heed not the rabble"
-                ]
-              }
-            }
-          },
-          {
-            "className": "Container",
-            "na": {
-              "padding": {
-                "className": "EdgeInsets.all",
-                "pa": [
-                  8
-                ]
-              },
-              "child": {
-                "className": "Text",
-                "pa": [
-                  "Sound of screams but the"
-                ]
-              }
-            }
-          },
-          {
-            "className": "Container",
-            "na": {
-              "padding": {
-                "className": "EdgeInsets.all",
-                "pa": [
-                  8
-                ]
-              },
-              "child": {
-                "className": "Text",
-                "pa": [
-                  "Who scream"
-                ]
-              }
-            }
-          },
-          {
-            "className": "Container",
-            "na": {
-              "padding": {
-                "className": "EdgeInsets.all",
-                "pa": [
-                  8
-                ]
-              },
-              "child": {
-                "className": "Text",
-                "pa": [
-                  "Revolution is coming..."
-                ]
-              }
-            }
-          },
-          {
-            "className": "Container",
-            "na": {
-              "padding": {
-                "className": "EdgeInsets.all",
-                "pa": [
-                  8
-                ]
-              },
-              "child": {
-                "className": "Text",
-                "pa": [
-                  "Revolution, they..."
-                ]
+                "className": "FairWidget",
+                "na": {
+                  "path": "assets/bundle/fair/lib_gridview_gridview_demo.fair.json"
+                }
               }
             }
           }
