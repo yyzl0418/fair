@@ -13,15 +13,38 @@
       }
     },
     "body": {
-      "className": "Center",
+      "className": "Column",
       "na": {
-        "child": {
-          "className": "FlutterLogo",
-          "na": {
-            "textColor": "#(Colors.red)",
-            "size": 50
+        "children": [
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "Center",
+                "na": {
+                  "child": {
+                    "className": "FlutterLogo",
+                    "na": {
+                      "textColor": "#(Colors.red)",
+                      "size": 50
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "FairWidget",
+                "na": {
+                  "path": "assets/bundle/fair/lib_flutterlogo_flutterlogo_demo.fair.json"
+                }
+              }
+            }
           }
-        }
+        ]
       }
     }
   },
