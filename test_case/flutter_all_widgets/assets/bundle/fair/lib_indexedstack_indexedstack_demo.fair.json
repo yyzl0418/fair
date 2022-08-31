@@ -13,26 +13,49 @@
       }
     },
     "body": {
-      "className": "IndexedStack",
+      "className": "Column",
       "na": {
-        "index": 1,
         "children": [
           {
-            "className": "Container",
+            "className": "Expanded",
             "na": {
-              "color": "#(Colors.red)"
+              "child": {
+                "className": "IndexedStack",
+                "na": {
+                  "index": 1,
+                  "children": [
+                    {
+                      "className": "Container",
+                      "na": {
+                        "color": "#(Colors.red)"
+                      }
+                    },
+                    {
+                      "className": "Container",
+                      "na": {
+                        "color": "#(Colors.grey)"
+                      }
+                    },
+                    {
+                      "className": "Container",
+                      "na": {
+                        "color": "#(Colors.yellow)"
+                      }
+                    }
+                  ]
+                }
+              }
             }
           },
           {
-            "className": "Container",
+            "className": "Expanded",
             "na": {
-              "color": "#(Colors.grey)"
-            }
-          },
-          {
-            "className": "Container",
-            "na": {
-              "color": "#(Colors.yellow)"
+              "child": {
+                "className": "FairWidget",
+                "na": {
+                  "path": "assets/bundle/fair/lib_indexedstack_indexedstack_demo.fair.json"
+                }
+              }
             }
           }
         ]

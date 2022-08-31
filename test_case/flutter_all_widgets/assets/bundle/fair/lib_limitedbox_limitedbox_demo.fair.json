@@ -1,0 +1,41 @@
+{
+  "className": "Scaffold",
+  "na": {
+    "appBar": {
+      "className": "AppBar",
+      "na": {
+        "title": {
+          "className": "Text",
+          "pa": [
+            "LimitedBoxDemo"
+          ]
+        }
+      }
+    },
+    "body": {
+      "className": "Container",
+      "na": {
+        "color": "#(Colors.blue)",
+        "child": {
+          "className": "UnconstrainedBox",
+          "na": {
+            "child": {
+              "className": "LimitedBox",
+              "na": {
+                "maxWidth": 100,
+                "maxHeight": 100,
+                "child": {
+                  "className": "Text",
+                  "pa": [
+                    "ddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaa"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "methodMap": {}
+}

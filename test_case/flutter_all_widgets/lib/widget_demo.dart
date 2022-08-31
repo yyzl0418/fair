@@ -32,6 +32,11 @@ import 'package:flutter_all_widgets/hero/hero_demo.dart';
 import 'package:flutter_all_widgets/icon/icon_demo.dart';
 import 'package:flutter_all_widgets/iconbutton/iconbutton_demo.dart';
 import 'package:flutter_all_widgets/indexedstack/indexedstack_demo.dart';
+import 'package:flutter_all_widgets/interactiveviewer/interactiveviewer_demo.dart';
+import 'package:flutter_all_widgets/intrinsicheight/intrinsicheight_demo.dart';
+import 'package:flutter_all_widgets/intrinsicwidth/intrinsicwidth_demo.dart';
+import 'package:flutter_all_widgets/layoutbuilder/layoutbuilder_demo.dart';
+import 'package:flutter_all_widgets/limitedbox/limitedbox_demo.dart';
 import 'package:flutter_all_widgets/outlinebutton/outlinebutton_demo.dart';
 import 'package:flutter_all_widgets/page_view/page_view_demo.dart';
 import 'package:flutter_all_widgets/rich_text/rich_text_demo.dart';
@@ -138,6 +143,11 @@ class HomePage extends StatelessWidget {
     WidgetItem("IconButton", IconButtonDemo()),
     WidgetItem("IgnorePointer", IgnorePointerDemo()),
     WidgetItem("IndexedStack", IndexedStackDemo()),
+    WidgetItem("InteractiveViewer", InteractiveViewerDemo()),
+    WidgetItem("IntrinsicHeight", IntrinsicHeightDemo()),
+    WidgetItem("IntrinsicWidth", IntrinsicWidthDemo()),
+    WidgetItem("LayoutBuilder", LayoutBuilderDemo()),
+    WidgetItem("LimitedBox", LimitedBoxDemo()),
   ];
 
   Widget _widgetCard(WidgetItem item, int index) {
