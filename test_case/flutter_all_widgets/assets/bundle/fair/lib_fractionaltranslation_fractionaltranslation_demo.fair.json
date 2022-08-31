@@ -13,28 +13,51 @@
       }
     },
     "body": {
-      "className": "Container",
+      "className": "Column",
       "na": {
-        "color": "#(Colors.amberAccent)",
-        "alignment": "#(Alignment.center)",
-        "child": {
-          "className": "FractionalTranslation",
-          "na": {
-            "translation": {
-              "className": "Offset",
-              "pa": [
-                1,
-                0
-              ]
-            },
-            "child": {
-              "className": "Text",
-              "pa": [
-                "Hello world"
-              ]
+        "children": [
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "Container",
+                "na": {
+                  "color": "#(Colors.amberAccent)",
+                  "alignment": "#(Alignment.center)",
+                  "child": {
+                    "className": "FractionalTranslation",
+                    "na": {
+                      "translation": {
+                        "className": "Offset",
+                        "pa": [
+                          1,
+                          0
+                        ]
+                      },
+                      "child": {
+                        "className": "Text",
+                        "pa": [
+                          "Hello world"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "FairWidget",
+                "na": {
+                  "path": "assets/bundle/fair/lib_fractionaltranslation_fractionaltranslation_demo.fair.json"
+                }
+              }
             }
           }
-        }
+        ]
       }
     }
   },

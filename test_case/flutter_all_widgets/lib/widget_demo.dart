@@ -25,7 +25,9 @@ import 'package:flutter_all_widgets/floatingactionbutton/floatingactionbutton_de
 import 'package:flutter_all_widgets/flow/flow_demo.dart';
 import 'package:flutter_all_widgets/flutterlogo/flutterlogo_demo.dart';
 import 'package:flutter_all_widgets/form/form_demo.dart';
+import 'package:flutter_all_widgets/fractionallysizedbox/fractionallysizedbox_demo.dart';
 import 'package:flutter_all_widgets/fractionaltranslation/fractionaltranslation_demo.dart';
+import 'package:flutter_all_widgets/gridview/gridview_demo.dart';
 import 'package:flutter_all_widgets/outlinebutton/outlinebutton_demo.dart';
 import 'package:flutter_all_widgets/page_view/page_view_demo.dart';
 import 'package:flutter_all_widgets/rich_text/rich_text_demo.dart';
@@ -124,6 +126,8 @@ class HomePage extends StatelessWidget {
     WidgetItem("FlutterLogo", FlutterLogoDemo()),
     WidgetItem("Form", FormDemo()),
     WidgetItem("FractionalTranslation", FractionalTranslationDemo()),
+    WidgetItem("FractionallySizedBox", FractionallySizedBoxDemo()),
+    WidgetItem("GridViewDemo", GridViewDemo()),
   ];
 
   Widget _widgetCard(WidgetItem item, int index) {
