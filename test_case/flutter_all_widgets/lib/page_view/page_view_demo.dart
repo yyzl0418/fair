@@ -1,6 +1,7 @@
 import 'package:fair/fair.dart';
 import 'package:flutter/material.dart';
 
+@FairPatch()
 class PageViewDemo extends StatelessWidget {
   const PageViewDemo({Key? key}) : super(key: key);
 
@@ -10,19 +11,30 @@ class PageViewDemo extends StatelessWidget {
       appBar: AppBar(
         title: Text("DataTableDemo"),
       ),
-      body: PageView(
-        /// [PageView.scrollDirection] defaults to [Axis.horizontal].
-        /// Use [Axis.vertical] to scroll vertically.
-        children: const <Widget>[
-          Center(
-            child: Text('First Page'),
+      body: Column(
+        children: [
+          Expanded(
+            child: PageView(
+              /// [PageView.scrollDirection] defaults to [Axis.horizontal].
+              /// Use [Axis.vertical] to scroll vertically.
+              children: const <Widget>[
+                Center(
+                  child: Text('First Page'),
+                ),
+                Center(
+                  child: Text('Second Page'),
+                ),
+                Center(
+                  child: Text('Third Page'),
+                )
+              ],
+            ),
           ),
-          Center(
-            child: Text('Second Page'),
+          Expanded(
+            child: FairWidget(
+              path: "assets/bundle/fair/lib_page_view_page_view_demo.fair.json",
+            ),
           ),
-          Center(
-            child: Text('Third Page'),
-          )
         ],
       ),
     );

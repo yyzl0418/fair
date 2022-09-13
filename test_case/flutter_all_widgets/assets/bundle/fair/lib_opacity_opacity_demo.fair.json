@@ -7,7 +7,7 @@
         "title": {
           "className": "Text",
           "pa": [
-            "OffstageDemo"
+            "OpacityDemo"
           ]
         }
       }
@@ -20,18 +20,13 @@
             "className": "Expanded",
             "na": {
               "child": {
-                "className": "Container",
+                "className": "Opacity",
                 "na": {
+                  "opacity": 0.5,
                   "child": {
-                    "className": "Offstage",
+                    "className": "Container",
                     "na": {
-                      "offstage": false,
-                      "child": {
-                        "className": "Container",
-                        "na": {
-                          "color": "#(Colors.green)"
-                        }
-                      }
+                      "color": "#(Colors.red)"
                     }
                   }
                 }
@@ -44,7 +39,7 @@
               "child": {
                 "className": "FairWidget",
                 "na": {
-                  "path": "assets/bundle/fair/lib_offstage_offstage_demo.fair.json"
+                  "path": "assets/bundle/fair/lib_opacity_opacity_demo.fair.json"
                 }
               }
             }

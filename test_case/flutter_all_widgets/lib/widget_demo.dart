@@ -46,7 +46,10 @@ import 'package:flutter_all_widgets/mediaquery/mediaquery_demo.dart';
 import 'package:flutter_all_widgets/mergesemantics/mergesemantics_demo.dart';
 import 'package:flutter_all_widgets/nestedscrollview/nestedscrollview_demo.dart';
 import 'package:flutter_all_widgets/offstage/offstage_demo.dart';
+import 'package:flutter_all_widgets/opacity/opacity_demo.dart';
 import 'package:flutter_all_widgets/outlinebutton/outlinebutton_demo.dart';
+import 'package:flutter_all_widgets/overflowbox/overflowbox_demo.dart';
+import 'package:flutter_all_widgets/padding/padding_demo.dart';
 import 'package:flutter_all_widgets/page_view/page_view_demo.dart';
 import 'package:flutter_all_widgets/rich_text/rich_text_demo.dart';
 import 'package:flutter_all_widgets/semantics/semantics_demo.dart';
@@ -168,6 +171,10 @@ class HomePage extends StatelessWidget {
     WidgetItem("MergeSemantics", MergeSemanticsDemo()),
     WidgetItem("NestedScrollView", NestedScrollViewDemo()),
     WidgetItem("Offstage", OffstageDemo()),
+    WidgetItem("Opacity", OpacityDemo()),
+    WidgetItem("OverflowBox", OverflowBoxDemo()),
+    WidgetItem("Padding", PaddingDemo()),
+    WidgetItem("PageView", PageViewDemo()),
   ];
 
   Widget _widgetCard(WidgetItem item, int index) {

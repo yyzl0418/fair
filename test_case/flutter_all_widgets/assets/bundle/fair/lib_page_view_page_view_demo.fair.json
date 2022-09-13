@@ -1,0 +1,57 @@
+{
+  "className": "Scaffold",
+  "na": {
+    "appBar": {
+      "className": "AppBar",
+      "na": {
+        "title": {
+          "className": "Text",
+          "pa": [
+            "DataTableDemo"
+          ]
+        }
+      }
+    },
+    "body": {
+      "className": "PageView",
+      "na": {
+        "children": [
+          {
+            "className": "Center",
+            "na": {
+              "child": {
+                "className": "Text",
+                "pa": [
+                  "First Page"
+                ]
+              }
+            }
+          },
+          {
+            "className": "Center",
+            "na": {
+              "child": {
+                "className": "Text",
+                "pa": [
+                  "Second Page"
+                ]
+              }
+            }
+          },
+          {
+            "className": "Center",
+            "na": {
+              "child": {
+                "className": "Text",
+                "pa": [
+                  "Third Page"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "methodMap": {}
+}
