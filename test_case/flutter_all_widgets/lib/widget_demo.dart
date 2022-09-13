@@ -39,6 +39,8 @@ import 'package:flutter_all_widgets/layoutbuilder/layoutbuilder_demo.dart';
 import 'package:flutter_all_widgets/limitedbox/limitedbox_demo.dart';
 import 'package:flutter_all_widgets/linearprogressindicator/linearprogressindicator_demo.dart';
 import 'package:flutter_all_widgets/listtile/listtile_demo.dart';
+import 'package:flutter_all_widgets/listview/listview_demo.dart';
+import 'package:flutter_all_widgets/longpressdraggable/longpressdraggable_demo.dart';
 import 'package:flutter_all_widgets/outlinebutton/outlinebutton_demo.dart';
 import 'package:flutter_all_widgets/page_view/page_view_demo.dart';
 import 'package:flutter_all_widgets/rich_text/rich_text_demo.dart';
@@ -154,6 +156,8 @@ class HomePage extends StatelessWidget {
     WidgetItem("LinearProgressIndicator", LinearProgressIndicatorDemo()),
     WidgetItem("ListBody", ListBodyDemo()),
     WidgetItem("ListTile", ListTileDemo()),
+    WidgetItem("ListView", ListViewDemo()),
+    WidgetItem("LongPressDraggable", LongPressDraggableDemo()),
   ];
 
   Widget _widgetCard(WidgetItem item, int index) {
