@@ -37,6 +37,8 @@ import 'package:flutter_all_widgets/intrinsicheight/intrinsicheight_demo.dart';
 import 'package:flutter_all_widgets/intrinsicwidth/intrinsicwidth_demo.dart';
 import 'package:flutter_all_widgets/layoutbuilder/layoutbuilder_demo.dart';
 import 'package:flutter_all_widgets/limitedbox/limitedbox_demo.dart';
+import 'package:flutter_all_widgets/linearprogressindicator/linearprogressindicator_demo.dart';
+import 'package:flutter_all_widgets/listtile/listtile_demo.dart';
 import 'package:flutter_all_widgets/outlinebutton/outlinebutton_demo.dart';
 import 'package:flutter_all_widgets/page_view/page_view_demo.dart';
 import 'package:flutter_all_widgets/rich_text/rich_text_demo.dart';
@@ -60,6 +62,7 @@ import 'circularProgressIndicator/circular_progressIndicator_demo.dart';
 import 'cupertino_tabbar/cupertino_tabbar_demo.dart';
 import 'cupertinoalertdialog/cupertino_alert_dialog_demo.dart';
 import 'ignorepointer/ignorepointer_demo.dart';
+import 'listbody/listbody_demo.dart';
 import 'widget_item.dart';
 
 class WidgetDemo extends StatelessWidget {
@@ -148,6 +151,9 @@ class HomePage extends StatelessWidget {
     WidgetItem("IntrinsicWidth", IntrinsicWidthDemo()),
     WidgetItem("LayoutBuilder", LayoutBuilderDemo()),
     WidgetItem("LimitedBox", LimitedBoxDemo()),
+    WidgetItem("LinearProgressIndicator", LinearProgressIndicatorDemo()),
+    WidgetItem("ListBody", ListBodyDemo()),
+    WidgetItem("ListTile", ListTileDemo()),
   ];
 
   Widget _widgetCard(WidgetItem item, int index) {

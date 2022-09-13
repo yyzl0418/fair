@@ -13,27 +13,50 @@
       }
     },
     "body": {
-      "className": "Container",
+      "className": "Column",
       "na": {
-        "color": "#(Colors.blue)",
-        "child": {
-          "className": "UnconstrainedBox",
-          "na": {
-            "child": {
-              "className": "LimitedBox",
-              "na": {
-                "maxWidth": 100,
-                "maxHeight": 100,
-                "child": {
-                  "className": "Text",
-                  "pa": [
-                    "ddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaa"
-                  ]
+        "children": [
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "Container",
+                "na": {
+                  "color": "#(Colors.blue)",
+                  "child": {
+                    "className": "UnconstrainedBox",
+                    "na": {
+                      "child": {
+                        "className": "LimitedBox",
+                        "na": {
+                          "maxWidth": 100,
+                          "maxHeight": 100,
+                          "child": {
+                            "className": "Text",
+                            "pa": [
+                              "ddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaaddaa"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "FairWidget",
+                "na": {
+                  "path": "assets/bundle/fair/lib_limitedbox_limitedbox_demo.fair.json"
                 }
               }
             }
           }
-        }
+        ]
       }
     }
   },
