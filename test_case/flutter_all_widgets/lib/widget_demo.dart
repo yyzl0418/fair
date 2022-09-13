@@ -41,6 +41,11 @@ import 'package:flutter_all_widgets/linearprogressindicator/linearprogressindica
 import 'package:flutter_all_widgets/listtile/listtile_demo.dart';
 import 'package:flutter_all_widgets/listview/listview_demo.dart';
 import 'package:flutter_all_widgets/longpressdraggable/longpressdraggable_demo.dart';
+import 'package:flutter_all_widgets/materialapp/materialapp_demo.dart';
+import 'package:flutter_all_widgets/mediaquery/mediaquery_demo.dart';
+import 'package:flutter_all_widgets/mergesemantics/mergesemantics_demo.dart';
+import 'package:flutter_all_widgets/nestedscrollview/nestedscrollview_demo.dart';
+import 'package:flutter_all_widgets/offstage/offstage_demo.dart';
 import 'package:flutter_all_widgets/outlinebutton/outlinebutton_demo.dart';
 import 'package:flutter_all_widgets/page_view/page_view_demo.dart';
 import 'package:flutter_all_widgets/rich_text/rich_text_demo.dart';
@@ -158,6 +163,11 @@ class HomePage extends StatelessWidget {
     WidgetItem("ListTile", ListTileDemo()),
     WidgetItem("ListView", ListViewDemo()),
     WidgetItem("LongPressDraggable", LongPressDraggableDemo()),
+    WidgetItem("MaterialApp", MaterialAppDemo()),
+    WidgetItem("MediaQuery", MediaQueryDemo()),
+    WidgetItem("MergeSemantics", MergeSemanticsDemo()),
+    WidgetItem("NestedScrollView", NestedScrollViewDemo()),
+    WidgetItem("Offstage", OffstageDemo()),
   ];
 
   Widget _widgetCard(WidgetItem item, int index) {

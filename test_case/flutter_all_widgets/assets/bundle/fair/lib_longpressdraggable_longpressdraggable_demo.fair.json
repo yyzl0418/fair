@@ -13,49 +13,72 @@
       }
     },
     "body": {
-      "className": "Center",
+      "className": "Column",
       "na": {
-        "child": {
-          "className": "LongPressDraggable",
-          "na": {
-            "child": {
-              "className": "Container",
-              "na": {
-                "width": 100,
-                "height": 100,
-                "color": "#(Colors.blue)"
+        "children": [
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "Center",
+                "na": {
+                  "child": {
+                    "className": "LongPressDraggable",
+                    "na": {
+                      "child": {
+                        "className": "Container",
+                        "na": {
+                          "width": 100,
+                          "height": 100,
+                          "color": "#(Colors.blue)"
+                        }
+                      },
+                      "feedback": {
+                        "className": "Container",
+                        "na": {
+                          "color": "#(Colors.red)",
+                          "width": 100,
+                          "height": 100
+                        }
+                      },
+                      "childWhenDragging": {
+                        "className": "Container",
+                        "na": {
+                          "color": "#(Colors.amber)",
+                          "width": 100,
+                          "height": 100
+                        }
+                      },
+                      "feedbackOffset": {
+                        "className": "Offset",
+                        "pa": [
+                          0,
+                          10
+                        ]
+                      },
+                      "dragAnchor": "#(DragAnchor.child)",
+                      "onDragStarted": "%(print)",
+                      "onDragEnd": "%(print)",
+                      "onDraggableCanceled": "%(print)",
+                      "onDragCompleted": "%(print)"
+                    }
+                  }
+                }
               }
-            },
-            "feedback": {
-              "className": "Container",
-              "na": {
-                "color": "#(Colors.red)",
-                "width": 100,
-                "height": 100
+            }
+          },
+          {
+            "className": "Expanded",
+            "na": {
+              "child": {
+                "className": "FairWidget",
+                "na": {
+                  "path": "assets/bundle/fair/lib_longpressdraggable_longpressdraggable_demo.fair.json"
+                }
               }
-            },
-            "childWhenDragging": {
-              "className": "Container",
-              "na": {
-                "color": "#(Colors.amber)",
-                "width": 100,
-                "height": 100
-              }
-            },
-            "feedbackOffset": {
-              "className": "Offset",
-              "pa": [
-                0,
-                10
-              ]
-            },
-            "dragAnchor": "#(DragAnchor.child)",
-            "onDragStarted": "%(print)",
-            "onDragEnd": "%(print)",
-            "onDraggableCanceled": "%(print)",
-            "onDragCompleted": "%(print)"
+            }
           }
-        }
+        ]
       }
     }
   },
