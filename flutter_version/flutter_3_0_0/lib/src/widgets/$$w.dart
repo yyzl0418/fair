@@ -3645,11 +3645,11 @@ var p = () => {
             semanticLabel: props['semanticLabel'],
             textDirection: props['textDirection'],
       ),
-      'IconData': (props) => IconData(
-            props['pa'][0],
-            fontFamily: props['fontFamily'],
-            fontPackage: props['fontPackage'],
-      ),
+      // 'IconData': (props) => IconData(
+      //       props['pa'][0],
+      //       fontFamily: props['fontFamily'],
+      //       fontPackage: props['fontPackage'],
+      // ),
       'Visibility': (props) => Visibility(
             key: props['key'],
             child: props['child'],
